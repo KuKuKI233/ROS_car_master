@@ -6,7 +6,7 @@
 &emsp; ├── launch 启动项\
 &emsp; &emsp;  ├── nav05_path.launch 修改路径规划器配置\
 ├── path_planner //路径规划算法功能包\
-└── urdf_RosCar_gazebo //无人车模型
+└── urdf_car_gazebo //无人车模型
 
 
 
