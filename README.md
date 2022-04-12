@@ -1,12 +1,11 @@
 # ROS_car_master 用于学习测试运动规划算法
 ====
 
-###########功能包介绍
-
-├── nav_demo //配置无人车运动导航规划
-
-├── path_planner //路径规划算法功能包
-
+###########功能包介绍 \
+├── nav_demo //配置无人车运动导航规划\
+&emsp; ├── launch 启动项\
+&emsp; &emsp;  ├── nav05_path.launch 修改路径规划器配置\
+├── path_planner //路径规划算法功能包\
 └── urdf_RosCar_gazebo //无人车模型
 
 
