@@ -1,0 +1,5 @@
+<library path="lib/libBDastar_planner">
+  <class name="BDastar_planner/BDastarPlanner" type="BDastar_planner::BDastarPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+    <description>This is a BDstar global planner plugin.</description>
+  </class>
+</library>

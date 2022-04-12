@@ -1,0 +1,5 @@
+<library path="lib/libdijistra_planner">
+  <class name="dijistra_planner/DijistraPlanner" type="dijistra_planner::DijistraPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+    <description>This is a astar global planner plugin.</description>
+  </class>
+</library>
