@@ -1,0 +1,6 @@
+<launch>
+    
+    <include file="$(find urdf_car_gazebo)/launch/launch_car_world01.launch" />
+    <include file="$(find nav_demo)/launch/nav06_test.launch" />
+
+</launch>

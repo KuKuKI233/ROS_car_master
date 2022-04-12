@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find urdf_car_gazebo)/launch/launch_car_in_rviz.launch" />
+    <include file="$(find urdf_car_gazebo)/launch/launch_car_world01.launch" />
+</launch>
