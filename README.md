@@ -38,7 +38,7 @@ PLUGINLIB_EXPORT_CLASS(global_planner::GlobalPlanner, nav_core::BaseGlobalPlanne
 
 #### 算法实现的注意
 1.流程上按照官方教程编写注册算法插件且nav05_path.launch也添加插件后，在rviz中的global path中不显示自定义的planner话题，可能的原因是算法没有初始化，没有也plan_pub_ = private_nh.advertise<nav_msgs::Path>("plan", 1)， 也就没有发布话题。
-修改.h中的 bool initialized_  为 bool initialized_ = false.能够保证每次启动都会进行初始化；
+修改.h中的 bool initialized_  为 bool initialized_ = false ，使用bool initialized_则initialized_没有初始化导致出现bug，bool initialized_ = false使每次启动都会进行初始化；
 
 2.算法出现死循环，需要注意变量的作用域是否正确。
 
