@@ -28,7 +28,9 @@ roslaunch nav_demo nav07_gazebo_rviz.launch 2>/dev/null
 PLUGINLIB_EXPORT_CLASS(global_planner::GlobalPlanner, nav_core::BaseGlobalPlanner)
 ```
 新建global_planner_plugin.xml 并修改；
+
 在package.xml中注册插件；
+
 在nav05_path.launch中加入插件：
 ```xml 
 <param name="base_global_planner" value="global_planner/GlobalPlanner"/>
