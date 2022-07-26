@@ -1,0 +1,5 @@
+<library path="lib/libhybrid_astar_planner">
+    <class name="hybrid_astar_planner/HybridAstarPlanner" type="hybrid_astar_planner::HybridAstarPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+      <description>This is a Hybrid Astar Planner plugin by iroboapp project.</description>
+    </class>
+</library>

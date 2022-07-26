@@ -1,0 +1,5 @@
+<library path="lib/libnew_astar_planner">
+  <class name="new_astar_planner/NewAstarPlanner" type="new_astar_planner::NewAstarPlanner" base_class_type="nav_core::BaseGlobalPlanner">
+    <description>This is a New Astar Planner plugin.</description>
+  </class>
+</library>

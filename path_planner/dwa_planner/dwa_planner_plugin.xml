@@ -1,0 +1,7 @@
+<library path="lib/libdwa_planner">
+    <class name ="dwa_planner/DWAPlanner" type ="dwa_planner::DWAPlanner" base_class_type= "nav_core::BaseLocalPlanner">
+            <description>
+                This is a DWAPlanner plugin by iroboapp project
+            </description>
+    </class>
+</library>
