@@ -8,7 +8,11 @@
 ├── path_planner //路径规划算法功能包\
 └── urdf_car_gazebo //无人车模型
 
+### 依赖项
 
+gazebo
+rviz
+Eiegn库
 
 ### 启动仿真环境
 rviz 和 gazebo联合仿真环境：
