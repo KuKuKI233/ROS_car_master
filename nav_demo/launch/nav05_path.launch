@@ -4,13 +4,18 @@
         <!-- 这里是调用自定义规划器 astar_planner为namespace /AstarPlanner为类名-->
         <!-- namespace 和 类名 定义在 astar_planner_plugin.xml中 -->
         <!-- 每次只能调用一个全局/局部规划器,若规划器继承于全局规划器，则 name="base_global_planner" -->
-        <param name="base_global_planner" value="bstar_planner/BstarPlanner"/>
-        <!-- <param name="base_global_planner" value="astar_planner/AstarPlanner"/> -->
+        <!-- <param name="base_global_planner" value="bstar_planner/BstarPlanner"/> -->
+        <!-- <param name="base_global_planner" value="new_astar_planner/NewAstarPlanner"/> -->
         <!-- <param name="base_global_planner" value="dijistra_planner/DijistraPlanner"/> -->
         <!-- <param name="base_global_planner" value="RRTstar_planner/RRTstarPlannerROS"/>    -->
         <!-- <param name="base_global_planner" value="BGRRT_planner/BGRRTPlannerROS"/> -->
         <!-- <param name="base_global_planner" value="BDastar_planner/BDastarPlanner"/> -->
-        
+        <!-- <param name="base_global_planner" value="rrt_planner/RRTPlanner"/> -->
+        <!-- <param name="base_global_planner" value="hybrid_astar_planner/HybridAstarPlanner"/> -->
+        <param name="base_local_planner" value="dwa_planner/DWAPlanner"/>
+
+
+
         <rosparam file="$(find nav_demo)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
         <rosparam file="$(find nav_demo)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
         <rosparam file="$(find nav_demo)/param/local_costmap_params.yaml" command="load" />
@@ -20,3 +25,4 @@
     </node>
 
 </launch>
+
