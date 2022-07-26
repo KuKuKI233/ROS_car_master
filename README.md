@@ -42,4 +42,5 @@ PLUGINLIB_EXPORT_CLASS(global_planner::GlobalPlanner, nav_core::BaseGlobalPlanne
 
 2.算法出现死循环，需要注意变量的作用域是否正确。
 
+### 新增dwa局部规划器
 
