@@ -6,6 +6,12 @@ TrajectoryPlannerROS:
   max_vel_x: 0.5 # X 方向最大速度
   min_vel_x: 0.1 # X 方向最小速速
 
+  max_vel_y: 0.0 # Y 方向最大速度
+  min_vel_y: 0.0 # Y 方向最小速速
+
+  max_vel_trans: 0.5 #平移速度: 因为这个车没有y速度，所以max_vel_trans等于max_vel_x
+  min_vel_trans: 0.1 #通上
+
   max_vel_theta:  1.0 # 
   min_vel_theta: -1.0
   min_in_place_vel_theta: 1.0
@@ -13,6 +19,7 @@ TrajectoryPlannerROS:
   acc_lim_x: 1.0 # X 加速限制
   acc_lim_y: 0.0 # Y 加速限制
   acc_lim_theta: 0.6 # 角速度加速限制
+  acc_lim_trans: 1.0 #最大平移加速度
 
 # Goal Tolerance Parameters，目标公差
   xy_goal_tolerance: 0.10
